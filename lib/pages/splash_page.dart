@@ -21,7 +21,7 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   Future<bool> splashDelayed() async {
-    await Future.delayed(Duration(seconds: 55));
+    await Future.delayed(Duration(seconds: 1155));
     return true;
   }
 
@@ -35,23 +35,36 @@ class _SplashPageState extends State<SplashPage> {
 
   @override
   Widget build(BuildContext context) {
+    double appBar=AppBar().preferredSize.height;
+    double width=MediaQuery.of(context).size.width;
+    double height=MediaQuery.of(context).size.height;
+    double totalHeight=height-appBar;
     return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
-              child: Text(Strings.splashPageBottomText,
-              style: TextStyle(fontSize:30 ),
+            Expanded(
+              flex: 1,
+              child: Container(
+                width: width,
+                color: ColorsCode.primaryColor,
+                child: Text(Strings.splashPageBottomText,
+                style: TextStyle(fontSize:totalHeight*0.30,fontFamily: 'mainFont',color: ColorsCode.whiteColor,height: -3),
+                ),
+                alignment: Alignment.bottomCenter,
               ),
-              alignment: Alignment.bottomCenter,
             ),
-            Container(
-              child: Text(Strings.splashPageTopText,
-                style: TextStyle(fontSize:30 ),
+            Expanded(
+              flex: 1,
+              child: Container(
+                width: width,
+                child: Text(Strings.splashPageTopText,
+                  style: TextStyle(fontSize:totalHeight*0.15,fontFamily:'secondFont',color: ColorsCode.primaryColor),
+                ),
+                alignment: Alignment.topCenter,
               ),
-              alignment: Alignment.topCenter,
             )
           ],
         ),
