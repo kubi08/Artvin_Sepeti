@@ -22,7 +22,7 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   Future<bool> splashDelayed() async {
-    await Future.delayed(Duration(seconds:5));
+    await Future.delayed(Duration(seconds:1));
     return true;
   }
 
