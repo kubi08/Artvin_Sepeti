@@ -19,13 +19,11 @@ class Body extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              "KAYIT OL",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: size.height * 0.03),
+            SizedBox(height: size.height * 0.10),
+            Text("KAYIT OL", style: TextStyle(fontWeight: FontWeight.bold)),
             Text("artvin",style: TextStyle(fontFamily: 'mainFont',fontSize: 100,color:primaryColor),),
             Text("sepeti",style: TextStyle(fontFamily: 'secondFont',fontSize: 50,color:primaryColor,height: 0.8),),
+            SizedBox(height: size.height * 0.02),
             RoundedInputField(
               hintText: "Email",
               onChanged: (value) {},

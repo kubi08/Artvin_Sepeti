@@ -26,7 +26,6 @@ class _OnBoardPageState extends State<OnBoardPage> {
       appBar: AppBar(
         backgroundColor: primaryColor,
         automaticallyImplyLeading: false,
-        title: Text("artvin sepeti",textAlign: TextAlign.center,style: TextStyle(fontSize: 25,fontFamily: 'secondFont')),
         elevation: 2,
         actions: [
           FlatButton(

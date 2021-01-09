@@ -7,15 +7,15 @@ class OnBoardModel{
   static List<OnBoardModel> list = [
     OnBoardModel(
       id: 1,
-      text: "Yemek istediğiniz ürünü bulunuz.",
+      text: "Sipariş etmek istediğiniz ürünü sepete ekleyiniz.",
     ),
     OnBoardModel(
       id: 2,
-      text: "Seçtiğiniz ürünü sepetinize ekleyiniz",
+      text: "Sepete eklediğiniz ürünün ödemesini gerçekletiriniz.",
     ),
     OnBoardModel(
       id: 3,
-      text: "Ödeme işleminizi yapabilirsiniz",
+      text: "Siparişin anında kapında bizi tercih ettiğiniz için teşekkür ederiz.",
     ),
   ];
 }
