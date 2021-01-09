@@ -1,7 +1,6 @@
 import 'package:artvin_sepeti/config/colors.dart';
 import 'package:flutter/material.dart';
 
-
 class AlreadyHaveAnAccountCheck extends StatelessWidget {
   final bool login;
   final Function press;
@@ -17,13 +16,13 @@ class AlreadyHaveAnAccountCheck extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Text(
-          login ? "Don’t have an Account ? " : "Already have an Account ? ",
+          login ? "Hesabınız yok mu? " : "Zaten hesabım var?  ",
           style: TextStyle(color:primaryColor),
         ),
         GestureDetector(
           onTap: press,
           child: Text(
-            login ? "Sign Up" : "Sign In",
+            login ? "Kaydol" : "Giriş",
             style: TextStyle(
               color:primaryColor,
               fontWeight: FontWeight.bold,

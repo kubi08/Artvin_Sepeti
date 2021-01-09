@@ -2,8 +2,6 @@ import 'package:artvin_sepeti/components/text_field_container.dart';
 import 'package:artvin_sepeti/config/colors.dart';
 import 'package:flutter/material.dart';
 
-
-
 class RoundedInputField extends StatelessWidget {
   final String hintText;
   final IconData icon;
@@ -24,7 +22,7 @@ class RoundedInputField extends StatelessWidget {
         decoration: InputDecoration(
           icon: Icon(
             icon,
-            color: primaryColor,
+            color:primaryColor,
           ),
           hintText: hintText,
           border: InputBorder.none,

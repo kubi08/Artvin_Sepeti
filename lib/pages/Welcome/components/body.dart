@@ -10,24 +10,21 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    // This size provide us total height and width of our screen
     return Background(
       child: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "WELCOME TO EDU",
+              "HOŞ GELDİNİZ",
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             SizedBox(height: size.height * 0.05),
-            SvgPicture.asset(
-              "assets/icons/chat.svg",
-              height: size.height * 0.45,
-            ),
+            Text("artvin",style: TextStyle(fontFamily: 'mainFont',fontSize: 100,color:primaryColor),),
+            Text("sepeti",style: TextStyle(fontFamily: 'secondFont',fontSize: 50,color:primaryColor,height: 0.8),),
             SizedBox(height: size.height * 0.05),
             RoundedButton(
-              text: "LOGIN",
+              text: "GİRİŞ YAP",
               press: () {
                 Navigator.push(
                   context,
@@ -40,9 +37,9 @@ class Body extends StatelessWidget {
               },
             ),
             RoundedButton(
-              text: "SIGN UP",
+              text: "KAYIT OL",
               color: primaryColor,
-              textColor: Colors.black,
+              textColor: whiteColor,
               press: () {
                 Navigator.push(
                   context,

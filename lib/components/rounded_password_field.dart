@@ -1,8 +1,6 @@
 import 'package:artvin_sepeti/components/text_field_container.dart';
 import 'package:artvin_sepeti/config/colors.dart';
 import 'package:flutter/material.dart';
-
-
 class RoundedPasswordField extends StatelessWidget {
   final ValueChanged<String> onChanged;
   const RoundedPasswordField({
@@ -16,9 +14,9 @@ class RoundedPasswordField extends StatelessWidget {
       child: TextField(
         obscureText: true,
         onChanged: onChanged,
-        cursorColor:primaryColor,
+        cursorColor:whiteColor,
         decoration: InputDecoration(
-          hintText: "Password",
+          hintText: "Şifre",
           icon: Icon(
             Icons.lock,
             color: primaryColor,
