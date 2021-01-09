@@ -22,8 +22,8 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             SizedBox(height: size.height * 0.03),
-            Text("artvin",style: TextStyle(fontFamily: 'mainFont',fontSize:size.width * 0.20,color:primaryColor),),
-            Text("sepeti",style: TextStyle(fontFamily: 'secondFont',fontSize:size.width * 0.10,color:primaryColor,height: 0.8),),
+            Text("artvin",style: TextStyle(fontFamily: 'mainFont',fontSize:size.width * 0.25,color:primaryColor),),
+            Text("sepeti",style: TextStyle(fontFamily: 'secondFont',fontSize:size.width * 0.15,color:primaryColor,height: 0.8),),
             SizedBox(height: size.height * 0.03),
             RoundedInputField(
               hintText: "Email",
