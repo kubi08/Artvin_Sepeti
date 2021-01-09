@@ -1,4 +1,5 @@
 import 'package:artvin_sepeti/config/export_config.dart';
+import 'package:artvin_sepeti/pages/onboard_page.dart';
 import 'package:artvin_sepeti/pages/promotion_page.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,7 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   Future<bool> splashDelayed() async {
-    await Future.delayed(Duration(seconds: 11155));
+    await Future.delayed(Duration(seconds:5));
     return true;
   }
 
@@ -29,7 +30,7 @@ class _SplashPageState extends State<SplashPage> {
     Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => PromotionPage(),
+          builder: (context) => OnBoardPage(),
         ));
   }
 
