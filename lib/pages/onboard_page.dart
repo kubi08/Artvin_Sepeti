@@ -23,13 +23,13 @@ class _OnBoardPageState extends State<OnBoardPage> {
     });
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: ColorsCode.primaryColor,
+        backgroundColor: primaryColor,
         automaticallyImplyLeading: false,
         title: Text("artvin sepeti",textAlign: TextAlign.center,style: TextStyle(fontSize: 25,fontFamily: 'secondFont')),
         elevation: 2,
         actions: [
           FlatButton(
-            child: Text("ATLA",style: TextStyle(color: ColorsCode.whiteColor,fontSize: 15),),
+            child: Text("ATLA",style: TextStyle(color: whiteColor,fontSize: 15),),
             onPressed: () {
               Navigator.push(
                 context,
@@ -76,7 +76,7 @@ class _OnBoardPageState extends State<OnBoardPage> {
                     width: 60,
                     height: 60,
                     child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation(ColorsCode.primaryColor),
+                      valueColor: AlwaysStoppedAnimation(primaryColor),
                       value: (initialPage) / (list.length-1),
                     ),
                   ),
@@ -94,14 +94,14 @@ class _OnBoardPageState extends State<OnBoardPage> {
                       width: 50,
                       height: 50,
                       decoration: BoxDecoration(
-                        color: ColorsCode.primaryColor,
+                        color:primaryColor,
                         borderRadius: BorderRadius.all(
                           Radius.circular(80),
                         ),
                       ),
                       child: Icon(
                         Icons.arrow_forward_ios_rounded,
-                        color: ColorsCode.whiteColor,
+                        color:whiteColor,
                       ),
                     ),
                   ),
@@ -120,7 +120,7 @@ class _OnBoardPageState extends State<OnBoardPage> {
     return Text(
       text,
       style: TextStyle(
-          color: ColorsCode.primaryColor,
+          color: primaryColor,
           fontSize: 20,
           fontFamily: 'secondFont'),
       textAlign: TextAlign.center,

@@ -50,9 +50,9 @@ class _SplashPageState extends State<SplashPage> {
               child: Container(
                 width: double.infinity,
                 alignment: Alignment.bottomCenter,
-                color: ColorsCode.primaryColor,
+                color:primaryColor,
                 child: Text(Strings.splashPageBottomText,
-                style: TextStyle(fontSize:width*0.35,fontFamily: 'mainFont',color: ColorsCode.whiteColor,height:-5),
+                style: TextStyle(fontSize:width*0.35,fontFamily: 'mainFont',color:whiteColor,height:-5),
                 ),
               ),
             ),
@@ -62,7 +62,7 @@ class _SplashPageState extends State<SplashPage> {
                 width: double.infinity,
                 alignment: Alignment.topCenter,
                 child: Text(Strings.splashPageTopText,
-                  style: TextStyle(fontSize:width*0.20,fontFamily:'secondFont',color: ColorsCode.primaryColor),
+                  style: TextStyle(fontSize:width*0.20,fontFamily:'secondFont',color:primaryColor),
                 ),
 
               ),

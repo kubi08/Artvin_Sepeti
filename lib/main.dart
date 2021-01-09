@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Artvin Sepeti',
       theme: ThemeData(
-        primaryColor: ColorsCode.primaryColor,
+        primaryColor:primaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home:SplashPage(),
