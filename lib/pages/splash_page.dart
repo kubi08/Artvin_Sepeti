@@ -22,10 +22,9 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   Future<bool> splashDelayed() async {
-    await Future.delayed(Duration(seconds:1));
+    await Future.delayed(Duration(seconds:3));
     return true;
   }
-
   void promotionPageRoute() {
     Navigator.pushReplacement(
         context,

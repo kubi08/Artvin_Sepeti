@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
  class Strings {
-   static const String splashPageBottomText="Artvin";
-   static const String splashPageTopText="Sepeti";
+   static const String splashPageBottomText="artvin";
+   static const String splashPageTopText="sepeti";
 }

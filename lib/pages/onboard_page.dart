@@ -21,26 +21,22 @@ class _OnBoardPageState extends State<OnBoardPage> {
         initialPage = _controller.page.round();
       });
     });
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: ColorsCode.primaryColor,
         automaticallyImplyLeading: false,
-        elevation: 3.5,
+        title: Text("artvin sepeti",textAlign: TextAlign.center,style: TextStyle(fontSize: 25,fontFamily: 'secondFont')),
+        elevation: 2,
         actions: [
-          Container(
-              width: 80,
-              height: 80,
-              child: FlatButton(
-                child: Text("ATLA",style: TextStyle(color: ColorsCode.whiteColor,fontFamily:'secondFont',fontSize: 15),),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => SplashPage()),
-                  );
-                },
-
-              )),
+          FlatButton(
+            child: Text("ATLA",style: TextStyle(color: ColorsCode.whiteColor,fontSize: 15),),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => SplashPage()),
+              );
+            },
+          ),
         ],
       ),
       body: Container(
@@ -66,8 +62,8 @@ class _OnBoardPageState extends State<OnBoardPage> {
     ),
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-
           Container(
             width: 70,
             height: 70,
@@ -113,8 +109,6 @@ class _OnBoardPageState extends State<OnBoardPage> {
               ],
             ),
           ),
-
-
         ],
       ),
           ],
