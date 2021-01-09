@@ -21,7 +21,7 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   Future<bool> splashDelayed() async {
-    await Future.delayed(Duration(seconds: 1155));
+    await Future.delayed(Duration(seconds: 11155));
     return true;
   }
 
@@ -48,22 +48,23 @@ class _SplashPageState extends State<SplashPage> {
             Expanded(
               flex: 1,
               child: Container(
-                width: width,
+                width: double.infinity,
+                alignment: Alignment.bottomCenter,
                 color: ColorsCode.primaryColor,
                 child: Text(Strings.splashPageBottomText,
-                style: TextStyle(fontSize:totalHeight*0.30,fontFamily: 'mainFont',color: ColorsCode.whiteColor,height: -3),
+                style: TextStyle(fontSize:width*0.35,fontFamily: 'mainFont',color: ColorsCode.whiteColor,height:-5),
                 ),
-                alignment: Alignment.bottomCenter,
               ),
             ),
             Expanded(
               flex: 1,
               child: Container(
-                width: width,
-                child: Text(Strings.splashPageTopText,
-                  style: TextStyle(fontSize:totalHeight*0.15,fontFamily:'secondFont',color: ColorsCode.primaryColor),
-                ),
+                width: double.infinity,
                 alignment: Alignment.topCenter,
+                child: Text(Strings.splashPageTopText,
+                  style: TextStyle(fontSize:width*0.20,fontFamily:'secondFont',color: ColorsCode.primaryColor),
+                ),
+
               ),
             )
           ],

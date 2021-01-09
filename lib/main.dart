@@ -1,3 +1,4 @@
+import 'package:artvin_sepeti/config/colors.dart';
 import 'package:artvin_sepeti/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Artvin Sepeti',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primaryColor: ColorsCode.primaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home:SplashPage(),
