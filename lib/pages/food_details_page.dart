@@ -59,7 +59,7 @@ class FoodDetailsPage extends StatelessWidget {
             SizedBox(height: 20),
             Text(
               "Açıklama",
-              style: TextStyle(fontSize: 16.0, color: Colors.black,fontFamily: 'secondFont'),
+              style: TextStyle(fontSize: 18.0, color: Colors.black,fontFamily: 'secondFont'),
             ),
             SizedBox(height: 10),
             Text(
