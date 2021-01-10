@@ -1,3 +1,4 @@
+import 'package:artvin_sepeti/config/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomListTile extends StatelessWidget {
@@ -15,7 +16,7 @@ class CustomListTile extends StatelessWidget {
         children: <Widget>[
           Icon(
             icon,
-            color: Colors.blue,
+            color: primaryColor,
           ),
           SizedBox(
             width: 15.0,

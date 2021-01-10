@@ -1,6 +1,7 @@
+import 'package:artvin_sepeti/config/colors.dart';
 import 'package:artvin_sepeti/widgets/custom_list_tile.dart';
+import 'package:artvin_sepeti/widgets/small_button.dart';
 import 'package:flutter/material.dart';
-
 
 class ProfilePage extends StatefulWidget {
   @override
@@ -15,9 +16,22 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
           backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 0.0,
+        leading: Icon(Icons.menu,size: 30,color: primaryColor,),
+        title:  Text("artvin sepeti",style: TextStyle(color: primaryColor,fontFamily: 'secondFont',fontSize: 30),),
+        backgroundColor: Colors.white,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: Icon(Icons.shopping_cart_outlined,size: 30,color: primaryColor,),
+          )
+        ],
+        centerTitle: true,
+      ),
           body: SingleChildScrollView(
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 20.0,vertical: 30),
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -29,14 +43,14 @@ class _ProfilePageState extends State<ProfilePage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Container(
-                        height: 120.0,
-                        width: 120.0,
+                        height: 100.0,
+                        width: 100.0,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(60.0),
                           boxShadow: [
                             BoxShadow(
-                                blurRadius: 3.0,
-                                offset: Offset(0, 4.0),
+                                blurRadius: 1.0,
+                                offset: Offset(0, 1.0),
                                 color: Colors.black38),
                           ],
                           image: DecorationImage(
@@ -47,27 +61,29 @@ class _ProfilePageState extends State<ProfilePage> {
                           ),
                         ),
                       ),
-
+                      SizedBox(
+                        width: 20.0,
+                      ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            "",
+                            "Kubilay BEŞLİ",
                             style: TextStyle(
-                              fontSize: 16.0,
+                              fontSize: 18.0,
                             ),
                           ),
                           SizedBox(
                             height: 10.0,
                           ),
                           Text(
-                            "",
+                            "kubilay_besli@hotmail.com",
                             style: TextStyle(color: Colors.grey),
                           ),
                           SizedBox(
                             height: 20.0,
                           ),
-                        //  SmallButton(btnText: "Edit"),
+                          SmallButton(btnText: "Düzenle"),
                         ],
                       ),
                     ],
@@ -76,17 +92,16 @@ class _ProfilePageState extends State<ProfilePage> {
                     height: 30.0,
                   ),
                   Text(
-                    "Hesap",
+                    "Hesap Ayarları",
                     style: TextStyle(
                       fontSize: 20.0,
                       fontWeight: FontWeight.bold,
+                      color: primaryColor
                     ),
                   ),
-                  SizedBox(
-                    height: 20.0,
-                  ),
+                  SizedBox(height: 20.0),
                   Card(
-                    elevation: 3.0,
+                    elevation: 2.0,
                     child: Padding(
                       padding: EdgeInsets.all(16.0),
                       child: Column(
@@ -96,40 +111,35 @@ class _ProfilePageState extends State<ProfilePage> {
                             text: "Adres",
                           ),
                           Divider(
-                            height: 10.0,
+                            height: 15.0,
                             color: Colors.grey,
                           ),
                           CustomListTile(
                             icon: Icons.visibility,
-                            text: "Parola",
+                            text: "Şifre Değiştir",
                           ),
                           Divider(
-                            height: 10.0,
+                            height: 15.0,
                             color: Colors.grey,
                           ),
                           CustomListTile(
                             icon: Icons.shopping_cart,
-                            text: "Sipariş",
+                            text: "Siparişler",
                           ),
                           Divider(
-                            height: 10.0,
+                            height: 15.0,
                             color: Colors.grey,
                           ),
                           CustomListTile(
                             icon: Icons.payment,
-                            text: "Ödeme",
+                            text: "Ödemeler",
                           ),
-                          Divider(
-                            height: 10.0,
-                            color: Colors.grey,
-                          ),
+
                         ],
                       ),
                     ),
                   ),
-                  SizedBox(
-                    height: 30.0,
-                  ),
+                  SizedBox(height: 30.0),
                   Text(
                     "Bildirimler",
                     style: TextStyle(
@@ -167,14 +177,14 @@ class _ProfilePageState extends State<ProfilePage> {
                             ],
                           ),
                           Divider(
-                            height: 10.0,
+                            height: 15.0,
                             color: Colors.grey,
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
                               Text(
-                                "Konum Takip",
+                                "Konum Takibi",
                                 style: TextStyle(
                                   fontSize: 16.0,
                                 ),
@@ -190,10 +200,7 @@ class _ProfilePageState extends State<ProfilePage> {
                               ),
                             ],
                           ),
-                          Divider(
-                            height: 10.0,
-                            color: Colors.grey,
-                          ),
+
                         ],
                       ),
                     ),
@@ -227,10 +234,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             ),
                             Text("Para Birimi", style: TextStyle(fontSize: 16.0)),
                             // SizedBox(height: 10.0,),
-                            Divider(
-                              height: 30.0,
-                              color: Colors.grey,
-                            ),
+
                           ],
                         ),
                       ),
