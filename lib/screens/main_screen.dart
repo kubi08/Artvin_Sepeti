@@ -1,4 +1,6 @@
 import 'package:artvin_sepeti/pages/home_page.dart';
+import 'package:artvin_sepeti/pages/order_page.dart';
+import 'package:artvin_sepeti/pages/profile_page.dart';
 import 'package:flutter/material.dart';
 
 
@@ -13,6 +15,8 @@ class _MainScreenState extends State<MainScreen> {
 
   int currentTabIndex = 0;
   HomePage homePage;
+  OrderPage orderPage;
+  ProfilePage profilePage;
   Widget currentPage;
   List<Widget> pages;
   @override
@@ -20,7 +24,9 @@ class _MainScreenState extends State<MainScreen> {
     // TODO: implement initState
     super.initState();
     homePage=HomePage();
-    pages= [homePage];
+    orderPage=OrderPage();
+    profilePage=ProfilePage();
+    pages= [homePage,orderPage,profilePage];
     currentPage =homePage;
   }
   @override
