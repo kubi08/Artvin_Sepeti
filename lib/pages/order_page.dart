@@ -1,4 +1,6 @@
 import 'package:artvin_sepeti/config/colors.dart';
+import 'package:artvin_sepeti/widgets/app_bar.dart';
+import 'package:artvin_sepeti/widgets/order_card.dart';
 import 'package:flutter/material.dart';
 
 
@@ -12,11 +14,18 @@ class _OrderPageState extends State<OrderPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 10.0),
+        padding: EdgeInsets.symmetric(horizontal: 10.0,vertical: 40),
         scrollDirection: Axis.vertical,
         children: <Widget>[
-        //  OrderCard(),
+         AppBarPage(),
+         SizedBox(height: 15,),
+         Divider(height: 0.5,color: primaryColor,),
+          SizedBox(height: 5,),
+         OrderCard(),
+         SizedBox(height: 15,),
+          OrderCard(),
          // OrderCard(),
         ],
       ),
