@@ -1,5 +1,6 @@
 import 'package:artvin_sepeti/config/colors.dart';
 import 'package:artvin_sepeti/data/food_data.dart';
+import 'package:artvin_sepeti/model/food_model.dart';
 import 'package:artvin_sepeti/widgets/app_bar.dart';
 import 'package:artvin_sepeti/widgets/bought_food.dart';
 import 'package:artvin_sepeti/widgets/food_category.dart';

@@ -1,4 +1,5 @@
 import 'package:artvin_sepeti/data/food_data.dart';
+import 'package:artvin_sepeti/model/food_model.dart';
 import 'package:artvin_sepeti/widgets/button.dart';
 import 'package:flutter/material.dart';
 
