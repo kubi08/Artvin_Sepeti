@@ -1,3 +1,4 @@
+import 'package:artvin_sepeti/pages/favorite_page.dart';
 import 'package:artvin_sepeti/pages/home_page.dart';
 import 'package:artvin_sepeti/pages/order_page.dart';
 import 'package:artvin_sepeti/pages/profile_page.dart';
@@ -16,6 +17,7 @@ class _MainScreenState extends State<MainScreen> {
   int currentTabIndex = 0;
   HomePage homePage;
   OrderPage orderPage;
+  FavoritePage favoritePage;
   ProfilePage profilePage;
   Widget currentPage;
   List<Widget> pages;
@@ -25,8 +27,9 @@ class _MainScreenState extends State<MainScreen> {
     super.initState();
     homePage=HomePage();
     orderPage=OrderPage();
+    favoritePage=FavoritePage();
     profilePage=ProfilePage();
-    pages= [homePage,orderPage,profilePage];
+    pages= [homePage,orderPage,favoritePage,profilePage];
     currentPage =homePage;
   }
   @override
