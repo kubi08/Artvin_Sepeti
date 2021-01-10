@@ -5,6 +5,7 @@ import 'package:artvin_sepeti/components/rounded_password_field.dart';
 import 'package:artvin_sepeti/config/colors.dart';
 import 'package:artvin_sepeti/pages/Login/components/background.dart';
 import 'package:artvin_sepeti/pages/Signup/signup_screen.dart';
+import 'package:artvin_sepeti/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -34,7 +35,9 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "GİRİŞ YAP",
-              press: () {},
+              press: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MainScreen(),));
+              },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(

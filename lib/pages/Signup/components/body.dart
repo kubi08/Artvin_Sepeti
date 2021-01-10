@@ -6,6 +6,7 @@ import 'package:artvin_sepeti/config/export_config.dart';
 import 'package:artvin_sepeti/pages/Login/login_screen.dart';
 import 'package:artvin_sepeti/pages/Signup/components/background.dart';
 import 'package:artvin_sepeti/pages/Signup/components/social_icon.dart';
+import 'package:artvin_sepeti/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'or_divider.dart';
@@ -32,7 +33,9 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "KAYIT OL",
-              press: () {},
+              press: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MainScreen(),));
+              },
             ),
             SizedBox(height: size.height * 0.03),
             AlreadyHaveAnAccountCheck(
