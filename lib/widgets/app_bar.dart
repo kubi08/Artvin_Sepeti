@@ -1,6 +1,5 @@
 import 'package:artvin_sepeti/config/colors.dart';
 import 'package:artvin_sepeti/config/export_config.dart';
-import 'package:artvin_sepeti/config/images_path.dart';
 import 'package:flutter/material.dart';
 
 class AppBarPage extends StatefulWidget {

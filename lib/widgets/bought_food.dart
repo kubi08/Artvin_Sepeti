@@ -36,9 +36,9 @@ class _BoughtFoodState extends State<BoughtFood> {
       child: Stack(
         children: <Widget>[
           Container(
-            height: 230.0,
+            height: 200.0,
             width: 340.0,
-            child: Image(image: AssetImage("assets/images/hamburger.png"), fit: BoxFit.contain),
+            child: Image.asset(widget.imagePath, fit: BoxFit.contain),
           ),
           Positioned(
             left: 0.0,
@@ -66,7 +66,7 @@ class _BoughtFoodState extends State<BoughtFood> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                     "Hamburger",
+                     widget.name,
                       style: TextStyle(
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold,
@@ -74,36 +74,16 @@ class _BoughtFoodState extends State<BoughtFood> {
                     ),
                     Row(
                       children: <Widget>[
-                        Icon(
-                          Icons.star,
-                          color:whiteColor,
-                          size: 16.0,
-                        ),
-                        Icon(
-                          Icons.star,
-                          color: whiteColor,
-                          size: 16.0,
-                        ),
-                        Icon(
-                          Icons.star,
-                          color: whiteColor,
-                          size: 16.0,
-                        ),
-                        Icon(
-                          Icons.star,
-                          color: whiteColor,
-                          size: 16.0,
-                        ),
-                        Icon(
-                          Icons.star,
-                          color: whiteColor,
-                          size: 16.0,
-                        ),
+                        Icon(Icons.star, color:whiteColor, size: 16.0),
+                        Icon(Icons.star, color: whiteColor, size: 16.0),
+                        Icon(Icons.star, color: whiteColor, size: 16.0),
+                        Icon(Icons.star, color: whiteColor, size: 16.0),
+                        Icon(Icons.star, color: whiteColor, size: 16.0),
                         SizedBox(
                           width: 10.0,
                         ),
                         Text(
-                          "Puan",
+                          "("+widget.ratings.toString() +"Puan",
                           style: TextStyle(color: whiteColor),
                         ),
                       ],
@@ -114,7 +94,7 @@ class _BoughtFoodState extends State<BoughtFood> {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: <Widget>[
                     Text(
-                     "20",
+                     widget.price.toString(),
                       style: TextStyle(
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold,
