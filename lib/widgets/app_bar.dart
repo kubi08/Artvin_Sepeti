@@ -16,7 +16,7 @@ class _AppBarPageState extends State<AppBarPage> {
         children:<Widget> [
           Icon(Icons.menu,size: 30,color: primaryColor,),
           Text("artvin sepeti",style: TextStyle(color: primaryColor,fontFamily: 'secondFont',fontSize: 30),),
-          Icon(Icons.shopping_cart,size: 30,color: primaryColor,)
+          Icon(Icons.shopping_cart_outlined,size: 30,color: primaryColor,)
         ],
       );
 

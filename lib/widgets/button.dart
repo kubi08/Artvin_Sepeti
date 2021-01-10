@@ -1,3 +1,4 @@
+import 'package:artvin_sepeti/config/colors.dart';
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
@@ -10,7 +11,7 @@ class Button extends StatelessWidget {
     return Container(
       height: 50.0,
       decoration: BoxDecoration(
-          color: Colors.blue, borderRadius: BorderRadius.circular(25.0)),
+          color: primaryColor, borderRadius: BorderRadius.circular(25.0)),
       child: Center(
         child: Text(
           "$btnText",
