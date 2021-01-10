@@ -1,7 +1,7 @@
 import 'package:artvin_sepeti/config/colors.dart';
+import 'package:artvin_sepeti/config/strings.dart';
 import 'package:artvin_sepeti/model/onboard_model.dart';
 import 'package:artvin_sepeti/pages/Welcome/welcome_screen.dart';
-import 'package:artvin_sepeti/pages/splash_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +29,7 @@ class _OnBoardPageState extends State<OnBoardPage> {
         elevation: 2,
         actions: [
           FlatButton(
-            child: Text("ATLA",style: TextStyle(color: whiteColor,fontSize: 15),),
+            child: Text(onBoardSkipText,style: TextStyle(color: whiteColor,fontSize: 15),),
             onPressed: () {
               Navigator.push(
                 context,

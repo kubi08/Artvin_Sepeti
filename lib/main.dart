@@ -1,4 +1,5 @@
 import 'package:artvin_sepeti/config/colors.dart';
+import 'package:artvin_sepeti/pages/home_page.dart';
 import 'package:artvin_sepeti/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primaryColor:primaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home:SplashPage(),
+      home:HomePage(),
     );
   }
 }
