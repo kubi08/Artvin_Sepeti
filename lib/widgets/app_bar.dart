@@ -3,24 +3,25 @@ import 'package:artvin_sepeti/config/export_config.dart';
 import 'package:artvin_sepeti/config/images_path.dart';
 import 'package:flutter/material.dart';
 
-class AppBarPage extends StatelessWidget {
+class AppBarPage extends StatefulWidget {
+  @override
+  _AppBarPageState createState() => _AppBarPageState();
+}
+
+class _AppBarPageState extends State<AppBarPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: whiteColor,
-        elevation: 2,
-        title: Row(
-          children: [
-            Image.asset(appBarLogo,height: 30,width: 30,),
-            Text(splashPageTopText,  style: TextStyle(color: primaryColor,fontFamily: 'secondFont',fontSize: 20),),
-            Text(splashPageBottomText,style: TextStyle(color: primaryColor,fontFamily: 'secondFont',fontSize: 20)),
-          ],
-        ),
-        actions: [
-           IconButton(icon: Icon(Icons.shopping_cart,color: primaryColor,), onPressed: null),
+    return Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children:<Widget> [
+          Icon(Icons.alarm_outlined,size: 30,color: primaryColor,),
+          Text("artvin sepeti",style: TextStyle(color: primaryColor,fontFamily: 'secondFont',fontSize: 30),),
+          Icon(Icons.shopping_cart,size: 30,color: primaryColor,)
         ],
-      )
-    );
+      );
+
+
   }
 }
+
