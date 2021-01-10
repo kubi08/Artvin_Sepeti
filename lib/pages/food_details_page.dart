@@ -25,65 +25,68 @@ class FoodDetailsPage extends StatelessWidget {
         ],
         centerTitle: true,
       ),
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Container(
-              height: 200.0,
-              width: MediaQuery.of(context).size.width,
-              child: Image.asset(
-                "assets/images/pizza.png",
-                fit: BoxFit.contain,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Container(
+                height: 200.0,
+                width: MediaQuery.of(context).size.width,
+                child: Image.asset(
+                  "assets/images/pizza.png",
+                  fit: BoxFit.contain,
+                ),
               ),
-            ),
-           SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                Text(
-                  "Pizza",
-                  style: TextStyle(fontSize: 18.0, color: primaryColor,fontFamily: 'secondFont'),
-                ),
-                Text(
-                  "30 TL",
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    fontFamily: 'secondFont',
-                    color: primaryColor,
+             SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    "Pizza",
+                    style: TextStyle(fontSize: 18.0, color: primaryColor,fontFamily: 'secondFont'),
                   ),
-                ),
-              ],
-            ),
-            SizedBox(height: 20),
-            Text(
-              "Açıklama",
-              style: TextStyle(fontSize: 18.0, color: Colors.black,fontFamily: 'secondFont'),
-            ),
-            SizedBox(height: 10),
-            Text(
-              "Pizza, İtalyan mutfağında bir mayalı hamur işi. Üstüne birçok malzeme konulabilir."
-              "Peynir, sosis, domates, salam, biber, zeytin, mısır gibi ana malzemeleri dışında birçok"
-               " değişik malzemenin konulduğu pizzalar da bulunmaktadır.",
-              textAlign: TextAlign.justify,
-            ),
-            SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                IconButton(icon: Icon(Icons.add_circle), onPressed: null),
-                SizedBox(width: 15.0,),
-                Text("1", style: TextStyle(fontSize: 16.0,),),
-                SizedBox(width: 15.0,),
-                IconButton(icon: Icon(Icons.remove_circle), onPressed: null),
-              ],
-            ),
-            SizedBox(height: 35),
-            Button(
-              btnText: "Karta Ekle",
-            ),
-          ],
+                  Text(
+                    "30 TL",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontFamily: 'secondFont',
+                      color: primaryColor,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 20),
+              Text(
+                "Açıklama",
+                style: TextStyle(fontSize: 18.0, color: Colors.black,fontFamily: 'secondFont'),
+              ),
+              SizedBox(height: 10),
+              Text(
+                "Pizza, İtalyan mutfağında bir mayalı hamur işi. Üstüne birçok malzeme konulabilir."
+                "Peynir, sosis, domates, salam, biber, zeytin, mısır gibi ana malzemeleri dışında birçok"
+                 " değişik malzemenin konulduğu pizzalar da bulunmaktadır.",
+                textAlign: TextAlign.justify,
+              ),
+              SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  IconButton(icon: Icon(Icons.add_circle), onPressed: null),
+                  SizedBox(width: 15.0,),
+                  Text("1", style: TextStyle(fontSize: 16.0,),),
+                  SizedBox(width: 15.0,),
+                  IconButton(icon: Icon(Icons.remove_circle), onPressed: null),
+                ],
+              ),
+              SizedBox(height: 30),
+              Button(
+                btnText: "Karta Ekle",
+              ),
+
+            ],
+          ),
         ),
       ),
     );

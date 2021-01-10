@@ -1,5 +1,5 @@
 import 'package:artvin_sepeti/config/colors.dart';
-import 'package:artvin_sepeti/pages/food_details_page.dart';
+import 'package:artvin_sepeti/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primaryColor:primaryColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home:FoodDetailsPage(),
+      home:MainScreen(),
     );
   }
 }
